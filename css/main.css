@@ -1,0 +1,276 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    background-color: rgb(255, 255, 255);
+}
+
+/* Todos los links */
+a {
+    text-decoration: none;
+}
+
+/* Menu de Navegacion */
+
+#logo {
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 550;
+    position: relative;
+    left: 320px
+}
+
+nav {
+    background-color: black;
+    padding: 3px;
+    /* position: sticky;
+    top: 0; */
+}
+
+.nav-dots li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.nav-links {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 400;
+    transition: all .3s ease-in;
+}
+
+.nav-links:hover {
+    font-size: 17px;
+    font-weight: 600;
+   
+}
+
+/* Banner */
+.banner {
+    background-color: rgb(252, 0, 223);
+    padding: 9px;
+    animation-name: banner;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 4s;
+}
+
+.banner a {
+    margin: 0px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes banner {
+    0% {
+        background-color: red;
+    }
+    15% {
+        background-color: rgb(252, 0, 223);
+    }
+    35% {
+        background-color: rgb(184, 5, 255);
+    }
+
+    50% {
+        background-color: rgb(85, 0, 255);
+    }
+    
+    60% {
+        background-color: rgb(130, 5, 255);
+    }
+
+    80% {
+        background-color: rgb(252, 0, 223);
+    }
+    100% {
+        background-color: red;
+    }
+}
+
+/* Titulo Index */
+h1 {
+    color: rgb(0, 0, 0);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* Nueva Temporada Index */
+.season {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-left: 500px;
+    margin-bottom: 225px; */
+}
+
+.season-title {
+    color: rgb(107, 39, 63);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    width: 450px;
+    margin-left: 100px;
+    margin-bottom: 10px;
+}
+
+.season-text {
+    font-size: 18px;
+    width: 500px;
+    margin-left: 155px;
+}
+
+.season-image {
+    position: absolute;
+    top: 110px;
+    left: 150px;
+
+}
+
+.dolo-sol {
+    width: 310px;
+    height: 420px;
+}
+
+/* Main Index */
+
+.main-index {
+    display: grid;
+    grid-template-areas: 
+    'main-4 main-4 main-4'
+    'main-1 main-2 main-3'
+    ;
+}
+
+.main-index section {
+    text-align: center;
+    background-color: rgb(255, 225, 235);
+    border: outset 2px rgb(255, 225, 235);
+    height: 100px;
+    margin: 15px;
+    padding-top: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+}
+
+.main-index section a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);;
+}
+
+.main-1 {
+    grid-area: main-1;
+}
+
+.main-2 {
+    grid-area: main-2;
+}
+
+.main-3 {
+    grid-area: main-3;
+}
+
+.main-4 {
+    grid-area: main-4;
+}
+
+/* Subtitulos */
+
+.subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+/* Items Modelos en Bikinis, Enterizas, Sueltas y Sale*/
+
+.item-list {
+    list-style-type: none;
+    /* padding-left: 20px; */
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    justify-content: center;
+    
+}
+
+.item-box {
+    text-align: center;
+    background-color: rgb(255, 225, 235);
+    height: 120px;
+    width: 200px;
+    /* --- */
+    border: outset 2px rgb(255, 225, 235);
+    /* --- */
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    /* --- */
+    /* margin-left: 10px;
+    margin-bottom: 10px; */
+    /* display: inline-block; */
+}
+
+/* Tabla de Talles */
+
+.table {
+    text-align: center;
+    font-size: 20px;
+    background-color: rgb(255, 225, 235);
+    margin-left: 515px;
+
+    border: outset 2px rgb(255, 225, 235);
+    padding: 15px;
+}
+
+/* Tabla de Talles --- Texto */
+
+.table-text {
+    text-align: center;
+    font-size: 17px;
+}
+
+/* Pie de Pagina */
+
+.foot {
+    text-align: center;
+}
+
+.foot-dots li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 75px;
+}
+
+.foot-links {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: 500;
+    /* text-decoration: underline; */
+    transition: all .4s ease-in-out;
+}
+
+.foot-links:hover {
+    text-decoration: underline;
+    color: rgb(77, 77, 77);
+}
+
+/* Links Preguntas Frecuentes */
+
+.links-preg {
+    text-decoration: underline;
+    color: rgb(107, 39, 63);
+    font-weight: 600;
+}
